@@ -1,0 +1,149 @@
+/*tudo recionado ao header */
+
+body{
+    background-color: #BFBFBF;
+
+}
+#logo{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+}
+
+header {
+    background-color:#40403F ;
+
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@200 & family= Lato:wght@300 & display=swap');
+
+
+
+
+body,header{
+    margin: 0%;
+    padding: 0%;
+    margin-top: 0%;    
+}
+
+
+#login{
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    left: 55em;
+    bottom: 2em;
+}
+
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    display: inline;    
+}
+
+.form{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    
+}
+
+.cor :hover .form{
+    background-color: #8C8C8C;
+    color: #000000;
+}
+
+ /*tudo recionado ao main  */
+
+.imgs{
+    width: 270px;
+    height: 250px;
+
+}
+
+h2{
+    color:#40403F;
+    position: absolute;
+    left: 3em;
+}
+
+#menu{
+    width: 100px;
+    height: 100px;
+}
+
+.imgs{
+    border-radius:5px;
+    box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+  
+.imgs:after{
+    content:"";   
+    width:100px;
+    height:100px;
+    opacity:0;
+    border-radius:3em;
+    box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+    transition: all 0.6s cubic-bezier(0.100, 0.60, 0.20, 1);
+}
+  
+.imgs:hover{
+    transform:scale(1.10,1.10);
+}
+  
+.imgs:hover::after{
+    opacity:1;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 2em ;
+    
+}
+
+
+div{
+    position: relative;
+    left: 25%;
+}
+
+
+section > div{
+
+    margin: 10px;
+    
+}
+
+
+.menu{
+ background-color: aqua;
+ color:blue;
+}
+
+button{
+    position: relative;
+}
+
+input[type="checkbox"]{
+    display: none;
+
+}
+
+p{
+    position: absolute;
+}
+
+.div2{
+    position: absolute;
+    top: 80%;
+}
+
