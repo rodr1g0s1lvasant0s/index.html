@@ -1,0 +1,71 @@
+ /*tudo recionado ao main  */
+h1{
+    text-align: center;
+    position: relative;
+    color: #ff0000;
+    top: 30px;
+    right: 30%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+.list_p {
+    list-style:none;
+    float:left;
+}
+
+.list_p li{
+    position:relative;
+    float:left;
+   
+}
+
+.list_p li a{
+    color:#ff0000; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.list_p li a:hover{
+    background:rgb(255, 255, 255);
+    color:#fff;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.list_p li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#F20505;
+    display:none;
+}
+
+.list_p li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+.list_p li ul li{
+
+    display:block;
+    width:150px;
+    float: right;
+   
+}
+
+.list_p {
+    float: right;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #ffffff;
+    bottom: -300px;
+}

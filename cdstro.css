@@ -1,0 +1,105 @@
+/*tudo recionado ao main  */
+h1{
+   left: 40px;
+    position: relative;
+    color: #ff0000;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+.list_p {
+    list-style:none;
+    float:left;
+}
+
+.list_p li{
+    position:relative;
+    float:left;
+   
+}
+
+.list_p li a{
+    color:#ffffff; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.list_p li a:hover{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.list_p li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#000000;
+    display:none;
+}
+
+.list_p li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+.list_p li ul li{
+
+    display:block;
+    width:150px;
+    float: right;
+   
+}
+
+.list_p {
+    float: right;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #CCC;
+}
+
+body{
+    background-image: url("https://vinholando.com/wp-content/uploads/2021/09/rotulo-de-vinho-nomes.jpg.webp");
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input,select,textarea,button{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
+form{
+    position: absolute;
+    top: 99px;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #ffffff;
+    bottom: -300px;
+}
+

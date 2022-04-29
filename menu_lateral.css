@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+ 
+ /*tudo recionado ao main  */
+ .imgs{
+    width: 270px;
+    height: 250px;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+.list_p {
+    list-style:none;
+    float:left;
+}
+
+.list_p li{
+    position:relative;
+    float:left;
+   
+}
+
+.list_p li a{
+    color:#333; 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+
+.list_p li a:hover{
+    background:#333;
+    color:#fff;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.list_p li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+}
+
+.list_p li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+.list_p li ul li{
+
+    display:block;
+    width:150px;
+}
+
+
+
+h2{
+    color:#40403F;  
+}
+#menu{
+    width: 40px;
+    height: 40px;
+    color: #0D0B0C;
+}
+input
+{
+    display: none;
+}
+.imgs {
+    border-radius:5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.imgs:after{   
+    width:100px;
+    height:100px;
+    transition: all 0.6s cubic-bezier(0.100, 0.60, 0.20, 1);
+}  
+.imgs:hover{
+    transform:scale(1.10,1.10);
+} 
+.imgs:hover::after{
+    opacity:2;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 2em ;
+}
+div{
+    position: relative;
+    left: 35%;
+}
+section > div{
+    margin: 10px;
+    height: 20%;
+}
+
+ 
+ /*css do menu lterl  */
+
+
+video{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    width: 100%;
+   
+}
+main{
+    position: relative;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.nlterl{
+    list-style: none;
+}
+
+.nlterl{
+    background-color: black;
+    top: 75px;
+    position: absolute;
+    width: 100%;
+}
+
+#menu{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.nv{
+    background-color: rgb(255, 179, 179);
+    width: 350px;
+    height: 900px;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input:checked ~nav{
+    transform: translateX(350px);
+}
+.lk{ 
+    display: block;  
+    padding: 20px 5px;
+    color: aliceblue;
+}
+
+.lk:hover{
+    background-color: blue;
+    color: rgb(0, 0, 0);
+}
+
+label{
+    padding:10px;
+    position: absolute;  
+    z-index:1 ; 
+}
