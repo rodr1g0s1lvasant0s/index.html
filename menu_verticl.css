@@ -1,0 +1,191 @@
+
+.imgs{
+    width: 270px;
+    height: 250px;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    color: #ff0000;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+.list_p {
+    list-style:none;
+  
+}
+
+.list_p li{
+    position:relative;
+   
+   
+}
+
+.list_p li a{
+    color:#ff0000; 
+    text-decoration:none; 
+    padding:20px 10px; 
+    display:list-item;
+}
+
+.list_p li a:hover{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+.list_p li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#8f8f8f;
+    display:none;
+}
+
+.list_p li:hover ul, .menu li.over ul{
+    display: list-item;
+}
+
+.list_p li ul li{
+
+    display:list-item;
+    width:150px;
+    
+   
+}
+
+
+
+h2{
+    color:#400101;  
+    position: absolute;
+    left: 80px;
+}
+#menu{
+    width: 40px;
+    height: 40px;
+    color: #808080;
+}
+input
+{
+    display: none;
+}
+.imgs {
+    border-radius:5px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.imgs:after{   
+    width:100px;
+    height:100px;
+    transition: all 0.6s cubic-bezier(0.100, 0.60, 0.20, 1);
+}  
+.imgs:hover{
+    transform:scale(1.10,1.10);
+} 
+.imgs:hover::after{
+    opacity:2;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 2em ;
+}
+div{
+    position: relative;
+    left: 40%;
+}
+section > div{
+    margin: 10px;
+    height: 20%;
+}
+
+ 
+ 
+
+a{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+video{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    width: 100%;
+   
+}
+main{
+    position: relative;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+.nlterl{
+    list-style: none;
+    text-decoration: none;
+}
+
+.nlterl{
+    background-color: #bababa;
+    top: 75px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+
+#menu{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+.nv{
+    background: image("");
+    width: 350px;
+    height: 900px;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+    list-style: none;
+    text-decoration: none;
+}
+
+input:checked ~nav{
+    transform: translateX(350px);
+}
+.lk{ 
+    display: block;  
+    padding: 20px 5px;
+    color: rgb(255, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.lk:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+label{
+    padding:10px;
+    position: absolute;  
+    z-index:1 ; 
+}
+
+footer{
+    width: 100%;
+  
