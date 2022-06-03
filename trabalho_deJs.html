@@ -1,0 +1,119 @@
+<script>
+
+    let vinhos2 = [];
+    let vinhos1 = [];
+    function adicionar(vinhos, vinho) { 
+        vinhos.push(vinho);
+    }
+    function alterar(vinhos, vinho, id) {
+        vinhos[id] = vinho
+    }
+    function deletar(vinhos, id) {
+        vinhos.splice(id, 1)
+    }
+    function listar(vinhos) {
+        return vinhos
+    }
+    function controlar_lista(vinhos) {
+        vinhos = listar(vinhos);
+        mostrar_lista(vinhos)
+    }
+    function mostrar_cadastro() {
+        alert("cadastrar Um Produto") 
+        let nome = prompt("nome do vinho");
+        let pais = prompt("pais De Origem");
+        let safra = parseInt(prompt("safra do vinho "));
+        let vinho = {
+            nome: nome,
+            pais: pais,
+            safra: safra 
+        };
+        return vinho
+    }
+    function mostrar_edicao() {
+        let id = parseInt(prompt("Qual id quer editar?"))
+        let vinho = vinhos[id]
+        let nome = prompt(`Nome Do Vinho? [${vinho.nome}]`); 
+        if (nome == "") {
+            nome = vinho.nome        
+        } 
+        let pais = prompt(`Nome Do País? [${vinho.pais}]`);
+        if (pais == "") {
+            pais = vinho.pais        
+        } 
+        let safra = prompt(`Ano Da Safra? [${vinho.safra}]`);
+        if (safra == "") {
+            safra = vinho.safra        
+        }
+        let vinhoNovo = {
+            nome: nome,
+            pais: pais,
+            safra: safra
+        };
+        return [vinhoNovo, id]      
+    }
+    function mostrar_delete() {
+        let id = parseInt(prompt("Qual Id Deseja Apagar?"))
+        return id 
+    }
+    function cadastrar(vinhos) {
+        let vinho = mostrar_cadastro()
+        adicionar(vinhos, vinho)
+    }
+    function calcularIdade(safra) {
+        let idade = new Date().getFullYear() - safra;
+        return idade;
+    }
+    function mostrar_lista(vinhos) { 
+        alert("listar")
+        let mensagem = "";
+        let id = 0;
+        for (let vinho of vinhos) {
+            let idade = calcularIdade(vinho.safra )
+            mensagem += id + ":" + vinho["nome"] + "-" + vinho.pais + ":" + vinho.safra + "Publicado há " + idade + "Anos",  "\n";
+            id++ ;
+        }
+        alert(mensagem);
+    }   
+    function editar(vinhos) {
+        controlar_lista(vinhos)
+        let [vinhoNovo, id] = mostrar_edicao()
+        alterar(vinhos, vinhoNovo, id)    
+    }  
+    function apagar(vinhos) {
+        controlar_lista(vinhos)
+        let id = mostrar_delete() 
+        deletar(vinhos, id)   
+    }
+    function menu() {
+        loop:
+            while (true) {
+                
+                alert("1:Cadastrar Vinho \n2:Listar vinhos \n3:Editar\n4:Apagar\n7:Sair");
+                
+                opcao = prompt("");
+                
+                switch (opcao) {
+                    case "1": 
+                        cadastrar(vinhos1)
+                        break
+                    case "2": 
+                        controlar_lista(vinhos1)
+
+                        break
+                    case "3":
+                        editar(vinhos1)
+                        break
+                    case "4":
+                        apagar(vinhos1)
+                        break          
+                    case "5": 
+                        alert("sair")
+                        break loop;
+                }
+            }
+    }
+
+    menu()
+
+</script>
