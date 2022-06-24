@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de vinhos</title>
+    <script src="index.js"></script> 
+    <link rel="stylesheet" href="in.css">
+ 
+</head>
+<body>
+    <header>
+        <h1 >Vinhos Do Porto</h1>
+        <ul class="list_p">
+            <li class="li_p"><a class="cor1" href="/">Instagram</a></li>
+            <li class="li_p"><a class="cor1" href="/">Nossos Produtos</a></li>
+            <li class="li_p"><a class="cor1" href="/">Fale Conosco</a></li>
+            <li class="li_p"><a class="cor1" href="/">Pedidos</a></li>
+            <li class="li_p"><a class="cor1" href="/">Adimin</a>
+                <ul class="list_s">
+                    <li class="li_s"><a class="cor2" href="cadastro.html">Cadastre um Prodruto</a></li>
+                 </ul>
+
+            </li>
+            <li class="li_p"><a class="cor1" href="index.html">voltar</a></li>
+        </ul>
+
+    </header>
+    <br>
+    <div id="mensagem"></div>
+    <form onsubmit="event.preventDefault(); cadastrar(vinhosvinhos_)" class="formulario">
+        <label>
+            <span>Nome do vinho:</span>
+            <input name="nome" type="text" placeholder="nome" id="nome"/>
+        </label>
+        <label>
+            país de origem:
+            <input name="autor" type="text" id="autor"/>
+        </label> 
+        <label>
+            Ano Da safra:
+            <input name="ano" type="text" id="ano"/>
+        </label>
+        <label>
+            Descrição:
+            <textarea name="descricao" cols="30" rows="10"
+            id="descricao"></textarea> <br>
+        </label>
+        <label for="capa" >Capa do vinho:</label>
+        <input name="capa" type="file" id="capa"/> <br>
+        <br>
+        <input type="submit" value="Enviar Formulário" >
+        <button>Enviar Formulário</button>
+    </form>
+    <button onclick="menu()">menu</button>
+    <button onclick="controlar_lista(vinhosvinhos_)">mostrar lista de vinhos </button>
+    <button onclick="teste(event)">teste</button>
+    <table>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>país</th>
+                <th>Ano</th>
+                <th>acoes</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+
+
+</body>
+</html>
